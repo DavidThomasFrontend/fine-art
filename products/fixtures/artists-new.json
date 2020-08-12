@@ -19,9 +19,8 @@
    "wikipedia": "http://en.wikipedia.org/wiki/Wassily_Kandinsky",
    "paintings": 88
  },
- 
  {
-   "id": 3,
+   "id": 2,
    "name": "Claude Monet",
    "years": "1840 - 1926",
    "genre": "Impressionism",
@@ -31,7 +30,7 @@
    "paintings": 73
  },
  {
-   "id": 5,
+   "id": 3,
    "name": "Salvador Dali",
    "years": "1904 - 1989",
    "genre": "Surrealism",
@@ -40,9 +39,8 @@
    "wikipedia": "http://en.wikipedia.org/wiki/Salvador_Dalí",
    "paintings": 139
  },
- 
  {
-   "id": 20,
+   "id": 4,
    "name": "Alfred Sisley",
    "years": "1839 - 1899",
    "genre": "Impressionism",
@@ -51,9 +49,8 @@
    "wikipedia": "http://en.wikipedia.org/wiki/Alfred_Sisley",
    "paintings": 259
  },
- 
  {
-   "id": 25,
+   "id": 5,
    "name": "Caravaggio",
    "years": "1571 - 1610",
    "genre": "Baroque",
@@ -62,9 +59,8 @@
    "wikipedia": "http://en.wikipedia.org/wiki/Caravaggio",
    "paintings": 55
  },
- 
  {
-   "id": 31,
+   "id": 6,
    "name": "Rembrandt",
    "years": "1606 - 1669",
    "genre": "Baroque",
@@ -73,9 +69,8 @@
    "wikipedia": "http://en.wikipedia.org/wiki/Rembrandt",
    "paintings": 262
  },
- 
  {
-   "id": 44,
+   "id": 7,
    "name": "Joan Miro",
    "years": "1893 – 1983",
    "genre": "Surrealism",
@@ -84,5 +79,4 @@
    "wikipedia": "https://en.wikipedia.org/wiki/Joan_Miró",
    "paintings": 102
  },
- 
-]
+ ]
