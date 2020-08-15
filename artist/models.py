@@ -8,7 +8,10 @@ class Artist(models.Model):
     nationality = models.CharField(max_length=254)
     bio = models.TextField()
     genre = models.CharField(max_length=254)
-    year = models.DecimalField(max_digits=6, decimal_places=2)
+    birth = models.DateField(null=True, blank=True)
+    death = models.DateField(null=True, blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
 
 
     def __str__(self):
