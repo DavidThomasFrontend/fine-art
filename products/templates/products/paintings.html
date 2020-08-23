@@ -10,71 +10,32 @@
 {% endblock %}
 
 {% block content %}
-
-
-					<!-- Product -->
-                    
-					<div class="row">
-						{% for paintings in products %}
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="{{ paintings.image.url }}" alt="IMG-PRODUCT" 
-								style="height: 360px;">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-                                <div class="block2-txt p-t-20">
-									<a class="block2-name dis-block s-text3 p-b-5">
-										{{ paintings.name }}
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										${{ paintings.price }}
-									</span>
-								</div>
-							</div>
-						</div>
-                    {% endfor %}   
-<!--<div class="overlay">
-   <div class="container-fluid">
+<div class="overlay">
+<div class="container-fluid">
+<div class="row">
+<div class="col text-center mt-3">
+   <h2 class="logo-font">All Paintings</h2>
+   <hr class="w-50 mb-1">
+</div>
+<div class="row">
+   <div class="product-container col-10 offset-1">
+      <div class="row mt-1 mb-2"></div>
       <div class="row">
-         <div class="col text-center mt-3">
-            <h2 class="logo-font">All Paintings</h2>
-            <hr class="w-50 mb-1">
-        </div>
-        <div class="row">
-            <div class="product-container col-10 offset-1">
-                <div class="row mt-1 mb-2"></div>
-                <div class="row">
-            {% for paintings in products %}
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card h-100 border-0">
-                        <div class="card">
-                            <img src="{{ paintings.image.url }}" alt="{{ paintings.name }}" style="width:70%">
-                            <h1 class="name">{{ paintings.name }}</h1>
-                            <p class="year">{{ paintings.year }}</p>
-                            <p class="price">${{ paintings.price }}</p>
-                            
-                        </div>
-                    </div>
-                </div>  
+         {% for paintings in products %}
+         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card h-100 border-0">
+               <div class="card">
+                  <img src="{{ paintings.image.url }}" alt="{{ paintings.name }}" style="width:70%">
+                  <h1 class="name">{{ paintings.name }}</h1>
+                  <p class="year">{{ paintings.year }}</p>
+                  <p class="price">${{ paintings.price }}</p>
+                  <button class="btn"><i class="fa fa-cart-plus"></i> Add to Cart</button>
+
+               </div>
+            </div>
+         </div>
          {% endfor %}
       </div>
    </div>
-</div>-->
-  
+</div>
 {% endblock %}
