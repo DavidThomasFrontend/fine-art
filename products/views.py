@@ -20,16 +20,13 @@ def all_products(request):
 
 
 
-    def paintings_detail(request):
-        """a view to show individual paintings"""
+    def painting_detail(request, product_id):
+        """ A view to show individual product details """
 
     product = get_object_or_404(Painting, pk=product_id)
 
-    for p in products:
-        print(p)
-
     context = {
-        'products': products,
+        'product': product,
     }
 
-    return render(request, 'products/paintings.html', context)
+    return render(request, 'products/painting_detail.html', context)
