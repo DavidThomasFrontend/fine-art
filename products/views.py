@@ -20,8 +20,8 @@ def all_products(request):
 
 
 
-    def painting_detail(request, product_id):
-        """ A view to show individual product details """
+def painting_detail(request, product_id):
+    """ A view to show individual product details """
 
     product = get_object_or_404(Painting, pk=product_id)
 
