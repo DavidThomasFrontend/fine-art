@@ -13,3 +13,17 @@ class Painting(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Genre(models.Model):
+
+    genre = (
+        'impressionism',
+        'expressionism',
+        'baroque',
+        'surrealism',
+    )
+
+
+    def __str__(self):
+        return self.name

@@ -35,14 +35,15 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ artists.name }}</p>
+                                    <p class="lead mb-0 text-left font-weight-bold">{{ artists.name }}</p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">Nationality: {{ artists.nationality }}</p>
                                             <p class="lead mb-0 text-left font-weight-bold">Genre: {{ artists.genre }}</p>
-                                            <p class="lead mb-0 text-left font-weight-bold">Birth: {{ artists.birth }} - {{ artists.death }}</p>
+                                            <p class="lead mb-0 text-left font-weight-bold"> {{ artists.birth }} - {{ artists.death }}</p>
+                                            <p class="lead mb-0 text-left font-weight-bold">Biography: {{ artists.bio }}</p>
                                             
                                         </div>
                                     </div>

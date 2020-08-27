@@ -26,11 +26,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if paintings.image %}
-                                <a href="">
+                                <a href="{% url 'painting_detail' paintings.id %}">
                                     <img class="card-img-top img-fluid" src="{{ paintings.image.url }}" alt="{{ paintings.name }}">
                                 </a>
                                 {% else %}
-                                <a href="">
+                                <a href="{% url 'painting_detail' paintings.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no_img.png" alt="{{ paintings.name }}">
                                 </a>
                                 {% endif %}
