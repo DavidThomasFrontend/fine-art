@@ -35,27 +35,24 @@
                                 </thead> 
                                   {% for item in bag_items %}
                                         <tr>
-                                            <td class="p-3 w-25">
-                                                <img class="img-fluid rounded" src="{{ item.product.image.url }}">
-                                            </td>
-                                            <td class="py-3">
-                                                <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                                <p class="my-0"><strong>Sizing Dimensions: </strong>{% if item.product.has_sizes %}{{ item.size | upper }}{% else %}N/A{% endif %}</p>
-                                                 <p class="my-0"><strong>{{ item.product.year }}</strong></p>
-                                            </td>
-                                            <td class="py-3">
-                                                <p class="my-0"><strong>€{{ item.product.price }}</strong></p>
-                                            </td>
-                                            <td class="py-3">
-                                                <p class="my-0"><strong>{{ item.product.quantity }}</strong></p>
-                                            </td>
-                                            <td class="py-3">
-                                                <p class="my-0"><strong>€{{ item.product.price }}</strong></p>
-                                            </td>
-
-
-
-                                        </tr>
+                                    <td class="p-3 w-25">
+                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                        <p class="my-0"><strong>Sizing Dimensions: </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                                        
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">${{ item.product.price }}</p>
+                                    </td>
+                                    <td class="py-3 w-25">
+                                        <p class="my-0">{{ item.quantity }}</p>
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">${{ item.product.price }}</p>
+                                    </td>
+                                </tr>
                                   {% endfor %} 
                                  <tr>
                                 <td colspan="5" class="pt-5 text-right">

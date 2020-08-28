@@ -9,6 +9,7 @@ from .models import Painting, Genre
 def all_products(request):
     """a view to show all products including search"""
 
+    
     products = Painting.objects.all()
     query = None
 
@@ -36,9 +37,7 @@ def all_products(request):
 
 def genre(request, genre_slug):
 
-    genre = get_object_or_404(Genre, slug=genre_slug)
-
-    products = Painting.objects.filter(genre=genre)
+    products = Painting.objects.filter(genre=genre_slug)
 
     context = {
         'products': products,
