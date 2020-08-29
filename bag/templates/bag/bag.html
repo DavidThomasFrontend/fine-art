@@ -75,9 +75,11 @@
                             <input type="hidden" name="product_size" value="{{ item.size }}"
                         {% endif %}
 
-                    </div>
+        </div>
                   </div>
-                                        </form>
+         </form>
+                            <a class="update-link text-info"><small>Update</small></a>
+                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
@@ -131,4 +133,24 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
+
+<script type="text/javascript">
+    $('.update-link').click(function(e) {
+        var form =$(this).prev('.update-form');
+        form.submit();
+    })
+
+    $('.remove-item').click(function(e) {
+        var csrftoken - "(( csrf_token ))";
+        var itemId = $(this).attr('id').split('remove')[1];
+        var size = $(this).data('size');
+        var url = `/bag/remove/${itemId}`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+
+        $.post(url, data)
+            .done(function() {
+                location.reload();
+            });
+    })
+</script>
 {% endblock %}
