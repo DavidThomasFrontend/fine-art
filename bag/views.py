@@ -31,11 +31,14 @@ def add_to_bag(request, item_id):
                 bag[item_id]['items_by_size'][size] = quantity
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
+            messages.success(request, f'Added {product.name} to your bag')
+
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
         else:
             bag[item_id] = quantity
+            print("added")
             messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag
@@ -70,7 +73,7 @@ def adjust_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
-
+    
     try:
         size = None
         if 'product_size' in request.POST:
