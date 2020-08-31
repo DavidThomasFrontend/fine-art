@@ -120,16 +120,13 @@ WSGI_APPLICATION = 'fineart.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
-#    }
-#}
-
 DATABASES = {
-    'default':dj_database_url.parse('postgres://pqdinnsdwuietx:45f07a03a204b9e8eedd954ae465fed51f80a8db8da2b068eb0259363460a805@ec2-46-137-79-235.eu-west-1.compute.amazonaws.com:5432/dd252qfc114717')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
+    }
 }
+
 
 
 # Password validation
