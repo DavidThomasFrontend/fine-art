@@ -26,7 +26,7 @@ urlpatterns = [
     path('artist/', include('artist.urls')),
     path('products/', include('products.urls')),
     path('bag/', include('bag.urls')),
-    path(r'^coupons/', include('coupons.urls')),
+    path('coupons/', include('coupons.urls')),
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
 
