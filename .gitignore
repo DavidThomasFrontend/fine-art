@@ -2,4 +2,3 @@
 *.pyc
 __pycache__
 env.py
-alldata.json
