@@ -27,9 +27,10 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
-ALLOWED_HOSTS = ['dthomas-fine-art.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['dthomas-fine-art.herokuapp.com', 'localhost', '8080-c5d76727-0dc4-49be-8d20-e623be61453c.ws-eu01.gitpod.io']
 
 
 # Application definition
