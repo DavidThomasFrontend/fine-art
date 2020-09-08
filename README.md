@@ -104,7 +104,7 @@ The deployment was difficult this time. I kept getting issues with heroku.
 - the images and fixtures i found were from combinations of Kaggle datasets for the images and google searches for the artist photos.
 - I also typed in each different painting name, year and price as well as bio for each artist
 
-### [](https://github.com/Vileblood/recipe-managerV2/blob/master/README.md#acknowledgements)Acknowledgements
+### Acknowledgements
 
 Mainly Django Tutorial/videos on Code Institute for structure and payment 
 
@@ -112,7 +112,8 @@ Used  [https://getbootstrap.com/](https://materializecss.com/)  for nav bar and 
 
 [https://stackoverflow.com](https://stackoverflow.com/)  For some troubleshooting of issues
 
-Various Youtube Channels though i found these repeated themselves with what i was following on the Code institute tutorial -https://www.youtube.com/watch?v=YZvRrldjf1Y&t=9493s
-							-https://www.youtube.com/channel/UC3VydBGBl132baPCLeDspMQ
+Various Youtube Channels though i found these repeated themselves with what i was following on the Code institute tutorial -https://www.youtube.com/watch?v=YZvRrldjf1Y&t=9493s - for saving delivery info
+
+https://www.youtube.com/channel/UC3VydBGBl132baPCLeDspMQ
 
 And i went through some older tutorials from code institute to fully understand the concepts

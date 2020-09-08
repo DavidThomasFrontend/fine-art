@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'artist',
     'bag',
     'checkout',
-    'coupons',
     'profiles',
 
     #Other
